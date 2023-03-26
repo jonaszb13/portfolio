@@ -35,10 +35,10 @@ header nav ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    transform: translate(-20%, -50%);
+    transform: translate(-25%, -50%);
     top: 50%;
     position: absolute;
-    left: 80%;
+    left: 75%;
 }
 
 header nav li {
@@ -82,9 +82,15 @@ h2 {
 .first img {
     width: 250px;
     border-radius: 50%;
+    margin-bottom: 40px;
 }
 
 .first p {
+    margin: 0;
+    margin-bottom: 7px;
+}
+
+.first p:last-child {
     width: 500px;
     text-align: center;
     margin-bottom: 150px;
