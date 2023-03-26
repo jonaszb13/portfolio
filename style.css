@@ -1,0 +1,241 @@
+/* Allgemeine Stile */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background: #0f0f10;
+    box-shadow: 0px 20px 20px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+header p {
+    transform: translate(50px, -50%);
+    top: 50%;
+    margin: 0;
+    position: absolute;
+    font-size: 2.2rem;
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    transform: translate(-20%, -50%);
+    top: 50%;
+    position: absolute;
+    left: 80%;
+}
+
+header nav li {
+    margin: 0 10px;
+    width: 110px;
+}
+
+header nav li:hover {
+    transform: translate(0px, 5px);
+    transition: 0.3s ease-in-out;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 50px;
+    min-height: 60%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-family: Helvetica, sans-serif;
+    align-items: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 0;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.first img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+.first p {
+    width: 500px;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+li img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+form {
+    width: 600px;
+}
+
+form label,
+form input,
+form textarea {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 90px;
+    background-color: #3f3f3f;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+footer a {
+    float: left;
+    margin-left: 10%;
+    font-size: 15px;
+    font-family: Helvetica, sans-serif;
+    color: #f0f0f0;
+    box-sizing: content-box;
+}
+
+footer p {
+    color: #f0f0f0;
+    position: relative;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    width: fit-content;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition-delay: 200ms;
+    transition: all 1s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.port:nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.port:nth-child(3) {
+    transition-delay: 600ms;
+}
+
+.blue {
+    background: #3c31dd;
+}
+
+.red {
+    background: #dd3f31;
+}
+
+.dark {
+    background: #0f0f10;
+}
+
+.custom-shape-divider-top-1679841264 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1679841264 svg {
+    position: relative;
+    display: block;
+    width: calc(125% + 1.3px);
+    height: 317px;
+}
+
+.custom-shape-divider-top-1679841264 .shape-fill {
+    fill: #3C31DD;
+}
+
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url('./layered-waves-haikei.svg');
+}

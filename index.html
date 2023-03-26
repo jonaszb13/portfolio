@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mein Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="textCycle()">
+    <header>
+        <p class="hedding" data-value="HELLO I'M JONAS">HELLO I'M JONAS</p>
+        <nav>
+            <ul>
+                <li><a href="#about-me">ÜBER MICH</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="first blue" id="about-me">
+        <h1 style="margin-top: 7%;"> Über mich </h1>
+        <img class="profile" src="profile.jpg" alt="Profilbild">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis earum ex qui placeat rerum quidem sit quam, laboriosam ullam delectus quaerat ut. Dignissimos consectetur cumque excepturi possimus quis repellendus praesentium.</p>
+    </section>
+
+
+    <section class="dark" id="portfolio">
+        
+        <h1 style="margin-top: 13%;">Portfolio</h1>
+        <ul>
+            <li class="port hidden">
+                <img src="port1.jpg" alt="Portfolio-Bild 1">
+                <h2>One Page - Schuh Webseite</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil deleniti qui pariatur laborum ipsum iusto fugit suscipit dicta modi recusandae sint dignissimos vel, dolores unde! Voluptatum beatae quia adipisci ullam.</p>
+            </li>
+            <li class="port hidden">
+                <img src="port2.jpg" alt="Portfolio-Bild 2">
+                <h2>Wikipedia - Remake</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos possimus ipsum aliquam blanditiis in! Temporibus commodi possimus alias incidunt unde, ea ducimus, ullam neque et, cumque itaque quibusdam omnis veniam!</p>
+            </li>
+            <li class="port hidden">
+                <img src="port3.jpg" alt="Portfolio-Bild 3">
+                <h2>Chrome Tab Leiste - Remake</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta porro reprehenderit veniam facilis quis molestiae adipisci enim dolore fugit, deleniti repellat exercitationem delectus officiis quod, voluptatem incidunt corrupti quam consequuntur!</p>
+            </li>
+        </ul>
+        <div class="custom-shape-divider-top-1679841264">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <div style="margin-top: -100px;" class="spacer layer1"></div>
+
+    <section class="red" id="contact">
+        <h1>Kontakt</h1>
+        <form action="submit-form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Senden</button>
+        </form>
+        
+    </section>
+
+    <footer class="red">
+        <p>Copyright © 2023</p>
+    </footer>
+</body>
+
+<script defer src="app.js"></script>
+
+</html>
